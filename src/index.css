@@ -1,0 +1,7 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/Inter_Web/inter.css);
+
+.page {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif; 
+}

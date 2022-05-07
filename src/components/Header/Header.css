@@ -1,0 +1,14 @@
+.header {
+  max-width: 1140px;
+  min-height: 38px;
+  margin: 0 auto 38px;
+  padding-top: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  max-height: 38px;
+}
+
+
