@@ -16,3 +16,15 @@
   border-radius: 3px;
   padding: 8px 20px;
 }
+
+@media screen and (max-width: 425px) {
+  .navigation__link {
+    font-size: 10px;
+    line-height: 1.6;
+    margin-right: 14px;
+  }
+
+  .navigation__link:last-child {
+    padding: 5px 12px;
+  }
+}
