@@ -2,7 +2,7 @@
   max-width: 1200px;
   width: calc(100% - 20px*2);
   min-height: 493px;
-  margin: auto;
+  margin: 20px auto 0;
   background: #F5F5F5;
   border-radius: 10px;
   display: flex;
@@ -30,6 +30,7 @@
 @media screen and (max-width: 425px) {
   .promo {
     width: calc(100% - 14px*2);
+    margin-top: 14px;
   }
 
   .promo__title {
