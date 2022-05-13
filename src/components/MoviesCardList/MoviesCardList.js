@@ -1,15 +1,9 @@
 import MoviesCard from '../MoviesCard/MoviesCard'
 import './MoviesCardList.css'
 
-function MoviesCardList(state) {
+function MoviesCardList() {
   return (
     <section className="movies-list">
-      <MoviesCard />
-      <MoviesCard />
-      <MoviesCard />
-      <MoviesCard />
-      <MoviesCard />
-      <MoviesCard />
       <MoviesCard />
       <MoviesCard />
       <MoviesCard />
