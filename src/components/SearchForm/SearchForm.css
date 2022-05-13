@@ -1,7 +1,6 @@
 .search {
   max-width: 1140px;
   margin: 80px auto 10px;
-  padding: 0 30px;
 }
 
 .search__form {
@@ -86,7 +85,7 @@
 
 @media screen and (max-width: 425px) {
   .search {
-    padding: 0 14px;
+    padding: 0 4px;
   }
 
   .search__form {
