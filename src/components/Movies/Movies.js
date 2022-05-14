@@ -11,7 +11,7 @@ function Movies() {
       <SearchForm />
       <MoviesCardList />
       {/* <Preloader /> */}
-      <button className="movies__more-button" type="button">Ещё</button>
+      <button className="movies__more-button hover-button" type="button">Ещё</button>
     </main>
   )
 }

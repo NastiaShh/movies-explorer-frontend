@@ -14,10 +14,10 @@ function AboutMe() {
             часть времени посвящать программированию, чтобы стать востребованным специалистом.</p>
           <ul className="about-me__social-networks">
             <li>
-              <a className="about-me__social-network" href="https://vk.com/shamray_n" rel="noreferrer" target="_blank">ВКонтакте</a>
+              <a className="about-me__social-network hover-link" href="https://vk.com/shamray_n" rel="noreferrer" target="_blank">ВКонтакте</a>
             </li>
             <li>
-              <a className="about-me__social-network" href="https://github.com/NastiaShh" rel="noreferrer" target="_blank">GitHub</a>
+              <a className="about-me__social-network hover-link" href="https://github.com/NastiaShh" rel="noreferrer" target="_blank">GitHub</a>
             </li>
           </ul>
         </div>

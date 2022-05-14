@@ -7,15 +7,15 @@ function Portfolio() {
       <h4 className="portfolio__title">Портфолио</h4>
       <ul className="portfolio__links">
         <li className="portfolio__link-container">
-          <a className="portfolio__link" href="https://nastiashh.github.io/how-to-learn" rel="noreferrer" target="_blank">Статичный сайт</a>
+          <a className="portfolio__link hover-link" href="https://nastiashh.github.io/how-to-learn" rel="noreferrer" target="_blank">Статичный сайт</a>
           <img className="portfolio__arrow-accent" src={arrowAccent} alt="Стрелка" />
         </li>
         <li className="portfolio__link-container">
-          <a className="portfolio__link" href="https://nastiashh.github.io/russian-travel" rel="noreferrer" target="_blank">Адаптивный сайт</a>
+          <a className="portfolio__link hover-link" href="https://nastiashh.github.io/russian-travel" rel="noreferrer" target="_blank">Адаптивный сайт</a>
           <img className="portfolio__arrow-accent" src={arrowAccent} alt="Стрелка" />
         </li>
         <li className="portfolio__link-container">
-          <a className="portfolio__link" href="https://nastiashh.github.io/react-mesto-auth" rel="noreferrer" target="_blank">Одностраничное приложение</a>
+          <a className="portfolio__link hover-link" href="https://nastiashh.github.io/react-mesto-auth" rel="noreferrer" target="_blank">Одностраничное приложение</a>
           <img className="portfolio__arrow-accent" src={arrowAccent} alt="Стрелка" />
         </li>
       </ul>

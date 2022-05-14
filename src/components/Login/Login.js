@@ -18,9 +18,9 @@ function Login() {
           <input className="login__input" type="password" name="password" placeholder="Пароль" required minLength="6" />
           <span className="login__input-error"></span>
         </div>
-        <button className="login__button" type="submit">Войти</button>
-        <p className="login__login-sign">Ещё не зарегистрированы?&nbsp;
-          <Link to="/sign-up" className="login__login-link">Регистрация</Link>
+        <button className="login__button hover-button" type="submit">Войти</button>
+        <p className="login__sign">Ещё не зарегистрированы?&nbsp;
+          <Link to="/sign-up" className="login__signup-link hover-link">Регистрация</Link>
         </p>
       </form>
     </section>

@@ -9,13 +9,13 @@ function Footer() {
 
         <ul className="footer__links">
           <li>
-            <a className="footer__link" href="https://practicum.yandex.ru" rel="noreferrer" target="_blank">Яндекс.Практикум</a>
+            <a className="footer__link hover-link" href="https://practicum.yandex.ru" rel="noreferrer" target="_blank">Яндекс.Практикум</a>
           </li>
           <li>
-            <a className="footer__link" href="https://github.com/Yandex-Practicum" rel="noreferrer" target="_blank">GitHub</a>
+            <a className="footer__link hover-link" href="https://github.com/Yandex-Practicum" rel="noreferrer" target="_blank">GitHub</a>
           </li>
           <li>
-            <a className="footer__link" href="https://www.facebook.com/yandex.practicum" rel="noreferrer" target="_blank">Facebook</a>
+            <a className="footer__link hover-link" href="https://www.facebook.com/yandex.practicum" rel="noreferrer" target="_blank">Facebook</a>
           </li>
         </ul>
       </div>

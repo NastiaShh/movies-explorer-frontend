@@ -67,15 +67,9 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 500;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in;
 }
 
-.login__button:hover {
-  opacity: 0.8;
-}
-
-.login__login-sign {
+.login__sign {
   margin: 0;
   font-size: 14px;
   line-height: 17px;
@@ -84,15 +78,9 @@
   justify-content: center;
 }
 
-.login__login-link {
+.login__signup-link {
   text-decoration: none;
   color: #3456F3;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in;
-}
-
-.login__login-link:hover {
-  opacity: 0.7;
 }
 
 @media screen and (max-width: 768px) {

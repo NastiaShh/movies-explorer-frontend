@@ -5,3 +5,15 @@
   margin: 0 auto;
   font-family: 'Inter', sans-serif; 
 }
+
+.hover-link:hover {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.hover-button:hover {
+  transition: opacity 0.3s ease-in;
+  opacity: 0.8;
+  cursor: pointer;
+}

@@ -13,8 +13,8 @@ function Profile() {
           <label className="profile__label">E-mail</label>
           <input className="profile__input" type="email" name="email" placeholder="E-mail" required />
         </div>
-        <button className="profile__button profile__button_submit" type="submit">Редактировать</button>
-        <button className="profile__button profile__button_logout" type="submit">Выйти из аккаунта</button>
+        <button className="profile__button profile__button_submit hover-link" type="submit">Редактировать</button>
+        <button className="profile__button profile__button_logout hover-link" type="submit">Выйти из аккаунта</button>
       </form>
     </section>
   )

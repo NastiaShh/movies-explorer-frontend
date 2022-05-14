@@ -23,9 +23,9 @@ function Register() {
           <input className="register__input" type="password" name="password" placeholder="Пароль" required minLength="6" />
           <span className="register__input-error">Что-то пошло не так...</span>
         </div>
-        <button className="register__button" type="submit">Зарегистрироваться</button>
+        <button className="register__button hover-button" type="submit">Зарегистрироваться</button>
         <p className="register__login-sign">Уже зарегистрированы?&nbsp;
-          <Link to="/sign-in" className="register__login-link">Войти</Link>
+          <Link to="/sign-in" className="register__login-link hover-link">Войти</Link>
         </p>
       </form>
     </section>

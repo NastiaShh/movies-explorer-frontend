@@ -20,7 +20,6 @@
   line-height: 17px;
   text-decoration: none;
   color: #3456F3;
-  transition: opacity 0.3s ease-in;
 }
 
 @media screen and (max-width: 768px) {
