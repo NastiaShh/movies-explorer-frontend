@@ -1,11 +1,11 @@
-import logo from '../../images/logo.svg'
+import Logo from '../Logo/Logo'
 import { Link } from 'react-router-dom'
 import './Login.css'
 
 function Login() {
   return (
     <section className="login">
-      <img className="login__logo" src={logo} alt="Логотип сайта" />
+      <Logo />
       <h2 className="login__title">Рады видеть!</h2>
       <form className="login__form">
         <div className="login__field">

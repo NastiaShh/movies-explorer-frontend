@@ -1,11 +1,11 @@
-import logo from '../../images/logo.svg'
+import Logo from '../Logo/Logo'
 import Navigation from '../Navigation/Navigation'
 import './Header.css'
 
 function Header() {
   return (
     <header className="header">
-      <img className="header__logo" src={logo} alt="Логотип сайта" />
+      <Logo />
       <Navigation />
     </header>
   )

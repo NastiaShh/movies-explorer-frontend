@@ -5,10 +5,7 @@
   padding: 18px 30px;
   display: flex;
   justify-content: space-between;
-}
-
-.header__logo {
-  max-height: 38px;
+  align-items: center;
 }
 
 @media screen and (max-width: 425px) {
