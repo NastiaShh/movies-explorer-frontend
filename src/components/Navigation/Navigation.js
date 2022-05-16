@@ -17,8 +17,8 @@ function Navigation() {
     <Switch>
       <Route exact path="/">
         <nav className="navigation">
-          <Link to="/sign-up" className="navigation__link navigation__link_unlogged hover-link">Регистрация</Link>
-          <Link to="/sign-in" className="navigation__link navigation__link_unlogged hover-button">Войти</Link>
+          <Link to="/signup" className="navigation__link navigation__link_unlogged hover-link">Регистрация</Link>
+          <Link to="/signin" className="navigation__link navigation__link_unlogged hover-button">Войти</Link>
         </nav>
       </Route>
 
