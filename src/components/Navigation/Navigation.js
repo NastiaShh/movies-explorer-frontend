@@ -24,7 +24,7 @@ function Navigation() {
 
       <Route exact path="/movies">
         <div className={`${isPopupOpen ? "overlay" : ""}`}>
-          <nav className={`navigation ${isPopupOpen ? "navigation__popup_open" : ""}`}>
+          <nav className={`navigation navigation__popup ${isPopupOpen ? "navigation__popup_open" : ""}`}>
             <button className="navigation__popup-button navigation__popup-button_close hover-button" onClick={handlePopupClose}></button>
             <Link to="/" className="navigation__link navigation__link_loggedin navigation__link-main hover-link">Главная</Link>
             <NavLink to="/movies" className="navigation__link navigation__link_loggedin hover-link" activeClassName="navigation__link_active">Фильмы</NavLink>
