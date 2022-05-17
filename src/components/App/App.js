@@ -1,4 +1,5 @@
 import { Switch, Route } from 'react-router-dom'
+import ProtectedRoute from '../ProtectedRoute/ProtectedRoute'
 import Header from '../Header/Header'
 import Main from '../Main/Main'
 import Movies from '../Movies/Movies'
@@ -13,18 +14,24 @@ import '../../index.css'
 function App() {
   return (
     <>
-      <Header />
       <Switch>
         <Route exact path="/">
+          <Header />
           <Main />
+          <Footer />
         </Route>
-        <Route path="/movies">
+        <ProtectedRoute path="/movies">
+          <Header />
           <Movies />
-        </Route>
-        <Route path="/saved-movies">
+          <Footer />
+        </ProtectedRoute>
+        <ProtectedRoute path="/saved-movies">
+          <Header />
           <SavedMovies />
-        </Route>
+          <Footer />
+        </ProtectedRoute>
         <Route path="/profile">
+          <Header />
           <Profile />
         </Route>
         <Route path="/signin">
@@ -37,7 +44,6 @@ function App() {
           <PageNotFound />
         </Route>
       </Switch>
-      <Footer />
     </>
   )
 }
