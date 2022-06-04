@@ -190,9 +190,12 @@ function App() {
   return (
     <CurrentUserContext.Provider value={currentUser}>
       <Header loggedIn={loggedIn} />
+
       <Switch>
         <Route exact path="/">
+          <Header />
           <Main />
+          <Footer />
         </Route>
         <ProtectedRoute path="/movies"
           component={Movies}
