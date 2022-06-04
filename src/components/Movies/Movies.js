@@ -1,18 +1,27 @@
-import './Movies.css'
-// import Header from '../Header/Header'
 import SearchForm from '../SearchForm/SearchForm'
 import MoviesCardList from '../MoviesCardList/MoviesCardList'
-// import Preloader from '../Preloader/Preloader'
+import './Movies.css'
 
-function Movies() {
+function Movies(props) {
   return (
-    <main className="movies">
-      {/* <Header /> */}
-      <SearchForm />
-      <MoviesCardList />
-      {/* <Preloader /> */}
-      <button className="movies__more-button hover-button" type="button">Ещё</button>
-    </main>
+    <>
+      <SearchForm
+        handleSearch={props.handleSearch}
+        defaultValue={props.defaultSearchValue}
+      />
+      <main className="movies">
+        <MoviesCardList
+          cards={props.cards}
+          handleShowMore={props.handleShowMore}
+          isSaved={props.isSaved}
+          isOnlySaved={false}
+          onCardSave={props.onCardSave}
+          onCardDelete={props.onCardDelete}
+          serverError={props.serverError}
+          loading={props.loading}
+        />
+      </main>
+    </>
   )
 }
 
