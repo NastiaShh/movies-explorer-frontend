@@ -147,6 +147,7 @@ function App() {
         setCurrentUser({ name, email })
       })
       .catch((err) => {
+        setErrorMessage('Что-то пошло не так...')
         console.log(err.message)
       })
   }

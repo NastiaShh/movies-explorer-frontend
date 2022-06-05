@@ -28,7 +28,7 @@ function Profile(props) {
       <form className="profile__form" onSubmit={handleSubmit}>
         <div className="profile__field">
           <label className="profile__label">Имя</label>
-          <input className="profile__input" value={values?.name} onChange={handleChange} disabled={isInputDisabled} type="text" name="name" placeholder="Имя" required />
+          <input className="profile__input" value={values?.name} onChange={handleChange} disabled={isInputDisabled} type="text" name="name" placeholder="Имя" minLength="2" maxLength="30" required />
         </div>
         {errors?.name && <span className="profile__input-error">{errors.name}</span>}
         <div className="profile__field">

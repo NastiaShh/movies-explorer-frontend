@@ -14,7 +14,7 @@ function Register(props) {
       <form className="register__form" onSubmit={handleSubmit}>
         <div className="register__field">
           <label className="register__label">Имя</label>
-          <input className="register__input" value={values?.name} onChange={handleChange} type="text" name="name" placeholder="Имя" required />
+          <input className="register__input" value={values?.name} onChange={handleChange} type="text" name="name" placeholder="Имя" minLength="2" maxLength="30" required />
           {errors?.name && <span className="register__input-error">{errors.name}</span>}
         </div>
         <div className="register__field">
