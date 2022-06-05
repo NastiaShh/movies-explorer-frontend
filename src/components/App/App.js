@@ -30,11 +30,9 @@ function App() {
   const history = useHistory()
 
   function getUserInfo() {
-    const path = location.pathname
     mainApi.getUserInfo()
       .then((userData) => {
         setLoggedIn(true)
-        history.push(path)
         setCurrentUser(userData)
       })
       .catch((err) => {
@@ -108,9 +106,18 @@ function App() {
       })
   }
 
-  useEffect(() => {
-    getUserInfo()
-    getSavedMovies()
+  useEffect(() => {    
+    const path = location.pathname
+    mainApi.getUserInfo()
+    .then((userData) => {
+      setLoggedIn(true)
+      history.push(path)
+      setCurrentUser(userData)
+      getSavedMovies()
+    })
+    .catch((err) => {
+      console.log(err.message)
+    })
   }, [])
 
 
@@ -167,8 +174,8 @@ function App() {
     auth.login(email, password)
       .then(() => {
         setLoggedIn(true)
-        getUserInfo()
         history.push('/movies')
+        getUserInfo()
       })
       .catch((err) => {
         setErrorMessage('Что-то пошло не так...')
