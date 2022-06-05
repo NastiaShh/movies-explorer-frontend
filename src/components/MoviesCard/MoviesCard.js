@@ -3,9 +3,20 @@ import './MoviesCard.css'
 
 function MoviesCard(props) {
   const nameRu = props.card.nameRU
-  const duration = props.card.duration
+  // const duration = props.card.duration
   const poster = props.isOnlySaved ? props.card.image : `https://api.nomoreparties.co/${props.card.image.url}`
   const trailerLink = props.card.trailerLink
+
+  const duration = () => {
+    if (props.card.duration > 60) {
+      return (props.card.duration / 60 | 0) + "ч " + props.card.duration % 60 + "м"
+    }
+    if (props.card.duration === 60) {
+      return (props.card.duration / 60) + "ч"
+    } else {
+      return props.card.duration + "м"
+    }
+  }
 
   function handleCardSave() {
     props.onCardSave(props.card)
@@ -26,7 +37,7 @@ function MoviesCard(props) {
             <button className="movie__button movie__button_save hover-button" onClick={handleCardSave} type="button">Сохранить</button>)}
         <div className="movie__info">
           <p className="movie__name">{nameRu}</p>
-          <p className="movie__duration">{duration} мин</p>
+          <p className="movie__duration">{duration()}</p>
         </div>
       </div>
     </>
