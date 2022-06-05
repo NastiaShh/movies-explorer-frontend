@@ -194,9 +194,7 @@ function App() {
 
       <Switch>
         <Route exact path="/">
-          <Header />
           <Main />
-          <Footer />
         </Route>
         <ProtectedRoute path="/movies"
           component={Movies}
