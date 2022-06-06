@@ -73,9 +73,7 @@ class MainApi {
 }
 
 const mainApi = new MainApi({
-  address: 'https://api.movies-explorer.nsh.nomoredomains.work',
-  // для локальной отладки
-  // address: 'http://localhost:3001',
+  address: process.env.REACT_APP_BASE_URL || 'http://localhost:3001',
   headers: {
     'Content-Type': 'application/json',
     'Accept': 'application/json'
