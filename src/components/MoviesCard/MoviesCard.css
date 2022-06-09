@@ -3,12 +3,18 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  cursor: pointer;
+}
+
+.movie__trailer {
+  height: 201px;
 }
 
 .movie__image {
-  max-width: 360px;
+  width: 360px;
+  height: 201px;
+  object-fit: cover;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .movie__button_save {
@@ -39,12 +45,19 @@
   border: none;
 }
 
-
-/* показать кнопку удаления карточки. временное решение на этапе добавления кнопки в верстку */
+.movie__button_delete {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-image: url(../../images/remove_saved_film.svg);
+  background-color: transparent;
+  border: none;
+}
 
 .movie__button_saved:hover {
   background-image: url(../../images/remove_saved_film.svg);
-  cursor: pointer;
 }
 
 .movie__info {
@@ -74,6 +87,19 @@
 }
 
 @media screen and (max-width: 900px) {
+  .movie {
+    max-width: 339px;
+  }
+
+  .movie__trailer {
+    height: 190px;
+  }
+
+  .movie__image {
+    width: 339px;
+    height: 190px;
+  }
+
   .movie__info {
     margin: 25px 0 0 0;
   }
@@ -86,6 +112,19 @@
 }
 
 @media screen and (max-width: 425px) {
+  .movie {
+    max-width: 300px;
+  }
+
+  .movie__trailer {
+    height: 168px;
+  }
+
+  .movie__image {
+    width: 300px;
+    height: 168px;
+  }
+
   .movie__button_save {
     top: 10px;
     right: 10px;
@@ -93,6 +132,11 @@
   }
 
   .movie__button_saved {
+    top: 10px;
+    right: 10px;
+  }
+
+  .movie__button_delete {
     top: 10px;
     right: 10px;
   }

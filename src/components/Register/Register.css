@@ -16,7 +16,7 @@
 }
 
 .register__field {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -63,6 +63,11 @@
   font-size: 14px;
   line-height: 17px;
   font-weight: 500;
+}
+
+.register__button_disabled {
+  background: #F9F9F9;
+  color: #A0A0A0;
 }
 
 .register__login-sign {
