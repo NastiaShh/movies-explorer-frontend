@@ -3,7 +3,6 @@ import './MoviesCard.css'
 
 function MoviesCard(props) {
   const nameRu = props.card.nameRU
-  // const duration = props.card.duration
   const poster = props.isOnlySaved ? props.card.image : `https://api.nomoreparties.co/${props.card.image.url}`
   const trailerLink = props.card.trailerLink
 
