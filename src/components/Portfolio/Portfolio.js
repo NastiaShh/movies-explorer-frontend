@@ -15,7 +15,7 @@ function Portfolio() {
           <img className="portfolio__arrow-accent" src={arrowAccent} alt="Стрелка" />
         </li>
         <li className="portfolio__link-container">
-          <a className="portfolio__link hover-link" href="https://nastiashh.github.io/react-mesto-auth" rel="noreferrer" target="_blank">Одностраничное приложение</a>
+          <a className="portfolio__link hover-link" href="https://mesto.nsh.nomoredomains.work/sign-in" rel="noreferrer" target="_blank">Одностраничное приложение</a>
           <img className="portfolio__arrow-accent" src={arrowAccent} alt="Стрелка" />
         </li>
       </ul>
